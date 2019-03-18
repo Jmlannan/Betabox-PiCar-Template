@@ -2,8 +2,12 @@ from driver import camera, stream
 from picar import back_wheels, front_wheels
 import picar
 
+#Set some things up:
 picar.setup()
 db_file = "/home/pi/SunFounder_PiCar-V/remote_control/remote_control/driver/config"
+
+#Start the stream at raspberrypi:8080/?action=stream
+print stream.start()
 
 '''
 Setup the front wheels with:
